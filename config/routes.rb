@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
 
+	root 'pages#home'
+  get 'pages/about'
   get 'articles/new'
-
-	root 'articles#index'
-
-
 	resources :articles
 
 end
